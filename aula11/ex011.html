@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: rgb(121, 212, 79) ;
+        }
+    </style>
+</head>
+<body>
+    <h2>Sua Nacionalidade</h2>
+    Escreva um país <input type="text" name="pais" id="pais">
+    <input type="button" value="Pesquisar" onclick="clicar()">
+    <div id="res"></div>
+    <script>
+        function clicar(){
+            var paisp = window.document.getElementById("pais")
+            var res = window.document.getElementById("res")
+            var vel = String(paisp.value)
+            res.innerHTML = `<p>Seu país é ${vel}</p>`
+             if(vel == "Brasil"){
+               res.innerHTML += "<p>Você é <strong>BRASILEIRO</strong></p>"
+        }else {
+            res.innerHTML += "<p>Você é <strong>ESTRANGEIRO</strong></p>"
+        }
+        
+    }
+    </script>
+</body>
+</html>
