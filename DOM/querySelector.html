@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - querySelector</title>
+</head>
+<body>
+    <div id="teste1">1</div>
+    <div class="teste2">222</div>
+    <div class="teste2">233</div>
+    <div class="teste2">244</div>
+    <p>teste 3</p>
+
+    <script>
+        console.log(
+            document.querySelector(".teste2")
+        )
+        /*A diferença entre document.getElementByClassName pro document.querySelector é que o document.querySelector é utilizado quando tem uma classe no HTML e o document.getElementByClassName é utilizado quando tem várias classes.   
+        A mesma acontece pro document.getElementByTagName.
+        */
+    </script>
+</body>
+</html>
